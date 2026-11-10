@@ -2,8 +2,8 @@
 Your project's description...
 
 ## Environments
-- Preview: https://main--pr-test-site--ema-sites.aem.page/
-- Live: https://main--pr-test-site--ema-sites.aem.live/
+- Preview: https://main--da-pr-test-site--ema-sites.aem.page/
+- Live: https://main--da-pr-test-site--ema-sites.aem.live/
 
 ## Documentation
 
