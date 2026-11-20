@@ -1,0 +1,249 @@
+{
+  "templates": [
+    {
+      "name": "travel-hospitality",
+      "urls": [
+        "https://aem-dynamicmedia-demo--dm--hlxsites.aem.page/travel-hospitality/wknd-trvl-home"
+      ],
+      "representativeUrl": "https://aem-dynamicmedia-demo--dm--hlxsites.aem.page/travel-hospitality/wknd-trvl-home",
+      "description": "WKND Travel Dynamic Media demo home page: carousel, promo cards, hotspot map, DM video, image transformation examples",
+      "blocks": [
+        {
+          "name": "carousel-fullwidth",
+          "instances": [
+            ".carousel.summit-carousel",
+            ".carousel-wrapper > .carousel"
+          ]
+        },
+        {
+          "name": "cards-promo",
+          "instances": [
+            ".cards.tours"
+          ]
+        },
+        {
+          "name": "hotspot",
+          "instances": [
+            ".hotspot.block",
+            ".hotspot-wrapper > .hotspot"
+          ]
+        },
+        {
+          "name": "embed-dm-video",
+          "instances": [
+            ".embed.dm-videoplayer",
+            ".embed-wrapper > .embed"
+          ]
+        },
+        {
+          "name": "cards-caption",
+          "instances": [
+            ".cards.block:not(.tours)",
+            ".cards-wrapper > .cards:not(.tours)"
+          ]
+        }
+      ],
+      "urlPattern": "/travel-hospitality/*",
+      "sections": [
+        {
+          "id": "rc1",
+          "name": "Image carousel",
+          "selector": [
+            ".section.carousel-container > .carousel-wrapper",
+            "body > main > div.section.carousel-container.dynamic-container > div.carousel-wrapper"
+          ],
+          "style": null,
+          "blocks": [
+            "carousel-fullwidth"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "rc2",
+          "name": "Brand logo image",
+          "selector": [
+            ".section.carousel-container > .dynamic-wrapper",
+            "body > main > div.section.carousel-container.dynamic-container > div.dynamic-wrapper"
+          ],
+          "style": "centered",
+          "blocks": [],
+          "defaultContent": [
+            ".section.carousel-container > .dynamic-wrapper"
+          ]
+        },
+        {
+          "id": "rc3",
+          "name": "Intro",
+          "selector": [
+            ".section.carousel-container > .default-content-wrapper",
+            "body > main > div.section.carousel-container.dynamic-container > div.default-content-wrapper"
+          ],
+          "style": "centered",
+          "blocks": [],
+          "defaultContent": [
+            ".section.carousel-container > .default-content-wrapper"
+          ]
+        },
+        {
+          "id": "rc4",
+          "name": "Tour reservation intro",
+          "selector": [
+            ".section.highlight > div.default-content-wrapper:nth-of-type(1)",
+            "body > main > div.section.highlight.cards-container.hotspot-container.embed-container > div.default-content-wrapper:nth-of-type(1)"
+          ],
+          "style": "centered",
+          "blocks": [],
+          "defaultContent": [
+            ".section.highlight > div.default-content-wrapper:nth-of-type(1)"
+          ]
+        },
+        {
+          "id": "rc5",
+          "name": "Tour and product cards",
+          "selector": [
+            ".section.highlight > div.cards-wrapper:nth-of-type(2)",
+            "body > main > div.section.highlight.cards-container.hotspot-container.embed-container > div.cards-wrapper:nth-of-type(2)"
+          ],
+          "style": null,
+          "blocks": [
+            "cards-promo"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "rc6",
+          "name": "Interactive map intro",
+          "selector": [
+            ".section.highlight > div.default-content-wrapper:nth-of-type(3)",
+            "body > main > div.section.highlight.cards-container.hotspot-container.embed-container > div.default-content-wrapper:nth-of-type(3)"
+          ],
+          "style": "centered",
+          "blocks": [],
+          "defaultContent": [
+            ".section.highlight > div.default-content-wrapper:nth-of-type(3)"
+          ]
+        },
+        {
+          "id": "rc7",
+          "name": "Interactive hotspot map",
+          "selector": [
+            ".section.highlight > .hotspot-wrapper",
+            "body > main > div.section.highlight.cards-container.hotspot-container.embed-container > div.hotspot-wrapper"
+          ],
+          "style": null,
+          "blocks": [
+            "hotspot"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "rc8",
+          "name": "Video intro",
+          "selector": [
+            ".section.highlight > div.default-content-wrapper:nth-of-type(5)",
+            "body > main > div.section.highlight.cards-container.hotspot-container.embed-container > div.default-content-wrapper:nth-of-type(5)"
+          ],
+          "style": "centered",
+          "blocks": [],
+          "defaultContent": [
+            ".section.highlight > div.default-content-wrapper:nth-of-type(5)"
+          ]
+        },
+        {
+          "id": "rc9",
+          "name": "Dynamic Media video player",
+          "selector": [
+            ".section.highlight > .embed-wrapper",
+            "body > main > div.section.highlight.cards-container.hotspot-container.embed-container > div.embed-wrapper"
+          ],
+          "style": null,
+          "blocks": [
+            "embed-dm-video"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "rc10",
+          "name": "Image transformations intro",
+          "selector": [
+            ".section.highlight > div.default-content-wrapper:nth-of-type(7)",
+            "body > main > div.section.highlight.cards-container.hotspot-container.embed-container > div.default-content-wrapper:nth-of-type(7)"
+          ],
+          "style": "centered",
+          "blocks": [],
+          "defaultContent": [
+            ".section.highlight > div.default-content-wrapper:nth-of-type(7)"
+          ]
+        },
+        {
+          "id": "rc11",
+          "name": "Crop examples",
+          "selector": [
+            ".section.highlight > div.cards-wrapper:nth-of-type(8)",
+            "body > main > div.section.highlight.cards-container.hotspot-container.embed-container > div.cards-wrapper:nth-of-type(8)"
+          ],
+          "style": null,
+          "blocks": [
+            "cards-caption"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "rc12",
+          "name": "Smart crop examples",
+          "selector": [
+            ".section.highlight > div.default-content-wrapper:nth-of-type(9)",
+            "body > main > div.section.highlight.cards-container.hotspot-container.embed-container > div.default-content-wrapper:nth-of-type(9)"
+          ],
+          "style": "centered",
+          "blocks": [],
+          "defaultContent": [
+            ".section.highlight > div.default-content-wrapper:nth-of-type(9)"
+          ]
+        },
+        {
+          "id": "rc13",
+          "name": "Color transformation examples",
+          "selector": [
+            ".section.highlight > div.cards-wrapper:nth-of-type(10)",
+            "body > main > div.section.highlight.cards-container.hotspot-container.embed-container > div.cards-wrapper:nth-of-type(10)"
+          ],
+          "style": null,
+          "blocks": [
+            "cards-caption"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "rc14",
+          "name": "Resizing, border and composite intro",
+          "selector": [
+            ".section.highlight > div.default-content-wrapper:nth-of-type(11)",
+            "body > main > div.section.highlight.cards-container.hotspot-container.embed-container > div.default-content-wrapper:nth-of-type(11)"
+          ],
+          "style": "centered",
+          "blocks": [],
+          "defaultContent": [
+            ".section.highlight > div.default-content-wrapper:nth-of-type(11)"
+          ]
+        },
+        {
+          "id": "rc15",
+          "name": "Composite imaging examples",
+          "selector": [
+            ".section.highlight > div.cards-wrapper:nth-of-type(12)",
+            "body > main > div.section.highlight.cards-container.hotspot-container.embed-container > div.cards-wrapper:nth-of-type(12)"
+          ],
+          "style": null,
+          "blocks": [
+            "cards-caption"
+          ],
+          "defaultContent": []
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "projectType": "da"
+  }
+}

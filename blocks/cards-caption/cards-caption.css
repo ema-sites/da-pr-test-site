@@ -1,0 +1,29 @@
+.cards-caption > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 24px;
+}
+
+.cards-caption .cards-caption-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.cards-caption .cards-caption-card-image {
+  line-height: 0;
+}
+
+/* no forced aspect-ratio or object-fit: the crop/size comes from the image URL itself */
+.cards-caption .cards-caption-card-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.cards-caption .cards-caption-card-caption {
+  margin: 8px 0 0;
+  text-align: center;
+}
