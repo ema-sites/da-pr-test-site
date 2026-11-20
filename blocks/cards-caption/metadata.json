@@ -1,0 +1,51 @@
+{
+  "variantName": "cards-caption",
+  "baseBlock": "cards",
+  "canonicalModel": "standalone",
+  "visualCharacteristics": {
+    "summary": "Image tiles with a short caption overlaid at the bottom over a dark gradient; 4-up or 2-up.",
+    "purpose": "Image tiles with a short caption overlaid at the bottom over a dark gradient."
+  },
+  "contentPattern": {
+    "summary": "Repeating image tiles with caption in a grid. | Repeating image tiles with caption in a grid. | Repeating image tiles with caption (2 items).",
+    "structure": "one row per card; cell 1 image, cell 2 short caption text"
+  },
+  "blockContent": {
+    "rows": "one row per card",
+    "cells": [
+      "image",
+      "body: short caption text"
+    ],
+    "occurrences": [
+      {
+        "selector": "body > main > div.section.highlight.cards-container.hotspot-container.embed-container > div.cards-wrapper:nth-of-type(8)",
+        "reason": "Repeating image tiles with caption in a grid.",
+        "section": "section-2",
+        "sectionMetadata": {
+          "style": "centered"
+        }
+      },
+      {
+        "selector": "body > main > div.section.highlight.cards-container.hotspot-container.embed-container > div.cards-wrapper:nth-of-type(10)",
+        "reason": "Repeating image tiles with caption in a grid.",
+        "section": "section-2",
+        "sectionMetadata": {
+          "style": "centered"
+        }
+      },
+      {
+        "selector": "body > main > div.section.highlight.cards-container.hotspot-container.embed-container > div.cards-wrapper:nth-of-type(12)",
+        "reason": "Repeating image tiles with caption (2 items).",
+        "section": "section-2",
+        "sectionMetadata": {
+          "style": "centered"
+        }
+      }
+    ]
+  },
+  "options": [],
+  "memberVariantIds": [],
+  "usage": "Grid of image tiles with a short caption. One row per card: image cell, caption cell. Lays out 4-up, or 2-up when the block has exactly 2 cards.",
+  "reuseGuidance": "Use for image galleries/examples where each image has a short caption. For tiles with CTAs and descriptions use cards-tour.",
+  "sourceUrl": "https://aem-dynamicmedia-demo--dm--hlxsites.aem.page/travel-hospitality/wknd-trvl-home"
+}

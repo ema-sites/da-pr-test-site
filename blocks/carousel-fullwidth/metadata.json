@@ -1,0 +1,35 @@
+{
+  "variantName": "carousel-fullwidth",
+  "baseBlock": "carousel",
+  "canonicalModel": "standalone",
+  "visualCharacteristics": {
+    "summary": "Full-bleed image-only slides, no text overlay, dot indicators below, prev/next buttons.",
+    "purpose": "Full-bleed image slideshow with prev/next buttons and dot indicators; text overlay optional."
+  },
+  "contentPattern": {
+    "summary": "Interactive rotating slideshow of 5 full-width images with dot indicators.",
+    "structure": "one row per slide; cell 1 image (required), cell 2 optional text (heading, description, CTA link)"
+  },
+  "blockContent": {
+    "rows": "one row per slide",
+    "cells": [
+      "image (mandatory, alone)",
+      "text content (optional: heading, description, CTA) - empty on this page"
+    ],
+    "occurrences": [
+      {
+        "selector": "body > main > div.section.carousel-container.dynamic-container > div.carousel-wrapper",
+        "reason": "Interactive rotating slideshow of 5 full-width images with dot indicators.",
+        "section": "section-1",
+        "sectionMetadata": {
+          "style": "centered"
+        }
+      }
+    ]
+  },
+  "options": [],
+  "memberVariantIds": [],
+  "usage": "Full-bleed rotating image slideshow at the top of a page. One row per slide: image cell, optional text cell (heading, description, CTA). Prev/next buttons and dot indicators appear when there are 2+ slides.",
+  "reuseGuidance": "Use for full-width hero slideshows, with or without overlay text. For a single static hero image use hero instead.",
+  "sourceUrl": "https://aem-dynamicmedia-demo--dm--hlxsites.aem.page/travel-hospitality/wknd-trvl-home"
+}

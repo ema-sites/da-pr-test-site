@@ -1,0 +1,53 @@
+.cards-caption > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 24px;
+}
+
+.cards-caption .cards-caption-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.cards-caption .cards-caption-card-image {
+  line-height: 0;
+}
+
+.cards-caption .cards-caption-card-image img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.cards-caption .cards-caption-card-caption {
+  padding: 12px;
+}
+
+/* caption overlays the bottom of the image over a gradient */
+.cards-caption .cards-caption-card-image + .cards-caption-card-caption,
+.cards-caption .cards-caption-card-caption:has(+ .cards-caption-card-image) {
+  position: absolute;
+  inset: auto 0 0;
+  padding: 32px 12px 12px;
+  text-align: center;
+  color: #fff;
+  background: linear-gradient(to top, rgb(0 0 0 / 70%), transparent);
+}
+
+.cards-caption .cards-caption-card-caption > p {
+  margin: 0;
+}
+
+@media (width >= 900px) {
+  .cards-caption > ul {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .cards-caption > ul:has(> li:nth-child(2):last-child) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

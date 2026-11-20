@@ -1,0 +1,34 @@
+{
+  "variantName": "video-dynamic-media",
+  "baseBlock": "video",
+  "canonicalModel": "standalone",
+  "visualCharacteristics": {
+    "summary": "Dynamic Media video player with caption/audio track support.",
+    "purpose": "Embeds a Dynamic Media video player (viewer iframe or video file), lazy loaded, with optional click-to-play poster."
+  },
+  "contentPattern": {
+    "summary": "Dynamic Media video player is an interactive component; the player is rendered client-side so the video URL must be taken from the source block config.",
+    "structure": "one row; a cell with the Dynamic Media video URL (viewer page, .../play player, or .mp4), optional poster image and optional caption paragraph"
+  },
+  "blockContent": {
+    "rows": "single row",
+    "cells": [
+      "video URL (Dynamic Media .../play or asset URL), optional poster image"
+    ],
+    "occurrences": [
+      {
+        "selector": "body > main > div.section.highlight.cards-container.hotspot-container.embed-container > div.embed-wrapper",
+        "reason": "Dynamic Media video player is an interactive component; the player is rendered client-side so the video URL must be taken from the source block config.",
+        "section": "section-2",
+        "sectionMetadata": {
+          "style": "centered"
+        }
+      }
+    ]
+  },
+  "options": [],
+  "memberVariantIds": [],
+  "usage": "Single row with the Dynamic Media video URL: a viewer page (scene7 s7viewers/*.html), a Dynamic Media with Open API player (.../play), or a direct video file (.mp4). Optional poster image makes it click-to-play.",
+  "reuseGuidance": "Use for any Dynamic Media video or viewer that renders client-side. Generic YouTube/Vimeo embeds belong in a video/embed block.",
+  "sourceUrl": "https://aem-dynamicmedia-demo--dm--hlxsites.aem.page/travel-hospitality/wknd-trvl-home"
+}

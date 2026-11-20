@@ -1,0 +1,11 @@
+{
+  "type": "da",
+  "sites": {
+    "da-pr-test-site": {
+      "libraryUrl": "https://main--sta-boilerplate--aemdemos.aem.page/tools/sidekick/library.json",
+      "previewOrg": "ema-sites",
+      "previewSite": "da-pr-test-site",
+      "contentHostUrl": "https://content.da.live/ema-sites/da-pr-test-site/"
+    }
+  }
+}
