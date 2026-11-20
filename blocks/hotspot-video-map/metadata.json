@@ -1,0 +1,19 @@
+{
+  "variantName": "hotspot-video-map",
+  "baseBlock": "hotspot",
+  "canonicalModel": "standalone",
+  "visualCharacteristics": {
+    "purpose": "Full-width image (e.g. a map) with absolutely positioned circular hotspots that open a Dynamic Media video or Scene7 viewer in a modal",
+    "description": "Full-width Iceland map image with 6 positioned hotspot circles opening DM videos / 3D viewer | Full-width map image with absolutely positioned circular hotspots opening video popups"
+  },
+  "contentPattern": {
+    "structure": "row 1 = background image (single cell: picture, image link or bare URL); then one row per hotspot: cell 1 = media URL (DM delivery /play URL or Scene7 viewer URL), cell 2 = left position in % (e.g. 38.5%), cell 3 = top position in % (e.g. 39%), optional cell 4 = accessible label",
+    "description": "Interactive component (clickable hotspots open media); no library block covers it, custom block required"
+  },
+  "options": [],
+  "memberVariantIds": [],
+  "usage": "Interactive map or scene where points open videos or 3D/spin viewers.",
+  "reuseGuidance": "Reuse whenever media should open from points on an image. Rows missing a URL or a valid position are skipped.",
+  "sourceUrl": "https://aem-dynamicmedia-demo--dm--hlxsites.aem.page/travel-hospitality/wknd-trvl-home",
+  "customBlock": true
+}

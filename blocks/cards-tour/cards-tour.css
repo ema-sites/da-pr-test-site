@@ -1,0 +1,37 @@
+/* cards-tour: structural styles only; visual design comes in the design pass */
+.cards-tour > ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.cards-tour .cards-tour-card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.cards-tour .cards-tour-card-image picture,
+.cards-tour .cards-tour-card-image img {
+  display: block;
+  width: 100%;
+}
+
+.cards-tour .cards-tour-card-image img {
+  height: auto;
+  object-fit: cover;
+}
+
+.cards-tour .cards-tour-card-body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.cards-tour .cards-tour-card-body > * {
+  margin: 0 0 0.75rem;
+}

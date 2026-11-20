@@ -1,0 +1,18 @@
+{
+  "variantName": "carousel-hero",
+  "baseBlock": "carousel",
+  "canonicalModel": "standalone",
+  "visualCharacteristics": {
+    "purpose": "Full-bleed rotating image slideshow at the top of the page, with prev/next arrows and dot indicators",
+    "description": "5 full-width Dynamic Media photo slides, no text, dot indicators and prev/next arrows | Full-bleed image-only slideshow at page top with dot indicators; no slide text"
+  },
+  "contentPattern": {
+    "structure": "one row per slide; cell 1 = slide image (picture, image link or bare Dynamic Media URL, rendered with its query string intact); cell 2 = optional text (heading, description, CTA), may be left empty",
+    "description": "Interactive rotating component with navigation; slides carry no text, photo background belongs to the block"
+  },
+  "options": [],
+  "memberVariantIds": [],
+  "usage": "Page-top hero slideshow of full-width photos, optionally with overlaid text per slide.",
+  "reuseGuidance": "Reuse for any full-width image slideshow. For a single static hero image use hero instead.",
+  "sourceUrl": "https://aem-dynamicmedia-demo--dm--hlxsites.aem.page/travel-hospitality/wknd-trvl-home"
+}

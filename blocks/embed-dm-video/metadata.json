@@ -1,0 +1,18 @@
+{
+  "variantName": "embed-dm-video",
+  "baseBlock": "embed",
+  "canonicalModel": "standalone",
+  "visualCharacteristics": {
+    "purpose": "Embeds an Adobe Dynamic Media / Scene7 video viewer (e.g. SmartCropVideoViewer.html) in a responsive 16:9 iframe",
+    "description": "Scene7 SmartCropVideoViewer embed | Scene7 Dynamic Media viewer iframe (Smart Crop video) instead of YouTube/Vimeo"
+  },
+  "contentPattern": {
+    "structure": "single cell: the viewer URL as a link or bare text (query string configures the viewer and is kept as-is); optional poster image above the URL turns it into click-to-play",
+    "description": "Third-party interactive media embed. visual-trees hint is default-content because the player had not rendered at capture (block was empty in DOM); source .plain.html has the viewer URL"
+  },
+  "options": [],
+  "memberVariantIds": [],
+  "usage": "Dynamic Media video players and Scene7 HTML5 viewers.",
+  "reuseGuidance": "Use for Scene7/DM viewer URLs. YouTube/Vimeo embeds belong in the library embed block.",
+  "sourceUrl": "https://aem-dynamicmedia-demo--dm--hlxsites.aem.page/travel-hospitality/wknd-trvl-home"
+}
