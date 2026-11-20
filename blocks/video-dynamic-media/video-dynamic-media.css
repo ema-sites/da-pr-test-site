@@ -1,0 +1,85 @@
+.video-dynamic-media {
+  max-width: 900px;
+  margin: 24px auto;
+  text-align: center;
+}
+
+.video-dynamic-media[data-embed-loaded='false']:not(.placeholder) {
+  /* reserve space to avoid layout shift before the player loads */
+  min-height: 200px;
+}
+
+.video-dynamic-media .video-dynamic-media-frame {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+}
+
+.video-dynamic-media .video-dynamic-media-frame iframe,
+.video-dynamic-media .video-dynamic-media-frame video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.video-dynamic-media .video-dynamic-media-placeholder {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  cursor: pointer;
+}
+
+.video-dynamic-media .video-dynamic-media-placeholder > * {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.video-dynamic-media .video-dynamic-media-placeholder picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.video-dynamic-media .video-dynamic-media-placeholder-play button {
+  position: relative;
+  display: block;
+  width: 64px;
+  height: 64px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  color: #fff;
+  background-color: rgb(0 0 0 / 50%);
+  cursor: pointer;
+}
+
+.video-dynamic-media .video-dynamic-media-placeholder-play button::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: calc(50% + 3px);
+  width: 0;
+  height: 0;
+  border-top: 12px solid transparent;
+  border-bottom: 12px solid transparent;
+  border-left: 18px solid;
+  transform: translate(-50%, -50%);
+}
+
+.video-dynamic-media .video-dynamic-media-placeholder-play button:focus-visible {
+  outline: 2px solid currentcolor;
+  outline-offset: 2px;
+}
+
+.video-dynamic-media .video-dynamic-media-caption {
+  margin: 12px 0 0;
+}
+
+.video-dynamic-media.video-dynamic-media-empty {
+  display: none;
+}

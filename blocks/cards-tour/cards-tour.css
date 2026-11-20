@@ -1,0 +1,48 @@
+.cards-tour > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 24px;
+}
+
+.cards-tour .cards-tour-card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.cards-tour .cards-tour-card-image {
+  line-height: 0;
+}
+
+.cards-tour .cards-tour-card-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.cards-tour .cards-tour-card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  padding: 16px;
+  text-align: center;
+}
+
+.cards-tour .cards-tour-card-body > p {
+  margin: 0 0 12px;
+}
+
+.cards-tour .cards-tour-card-cta .button {
+  display: inline-block;
+  border-radius: 999px;
+}
+
+@media (width >= 900px) {
+  .cards-tour > ul {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
