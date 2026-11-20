@@ -1,0 +1,17 @@
+{
+  "variantName": "hotspot",
+  "baseBlock": "hotspot",
+  "canonicalModel": "standalone",
+  "visualCharacteristics": {
+    "purpose": "full-width image (Iceland map) with positioned hotspot circles that open Dynamic Media video or 3D viewer media in a modal",
+    "layout": "image fills the block width; circles are absolutely positioned by left/top percentage over the image; media opens in a centred modal dialog with a 16:9 iframe"
+  },
+  "contentPattern": {
+    "structure": "row 1 = background image (picture, image link or plain-text URL); each following row = [media link or list of links (video /play URL or viewer URL), left position % (e.g. 38.5%), top position % (e.g. 39%)]"
+  },
+  "options": [],
+  "memberVariantIds": [],
+  "usage": "Interactive maps or product images where points of interest open video or 3D media (6 hotspots on the WKND Travel Iceland map).",
+  "reuseGuidance": "Use for any image with clickable positioned points that open embeddable media. Rows with no link or with non-numeric positions are skipped.",
+  "sourceUrl": "https://aem-dynamicmedia-demo--dm--hlxsites.aem.page/travel-hospitality/wknd-trvl-home"
+}

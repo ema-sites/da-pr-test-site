@@ -1,0 +1,17 @@
+{
+  "variantName": "cards-caption",
+  "baseBlock": "cards",
+  "canonicalModel": "standalone",
+  "visualCharacteristics": {
+    "purpose": "image grid with a short caption under each image",
+    "layout": "responsive grid (4-up on desktop, fewer items fill the row), caption centred below the image; image keeps its own crop/aspect from the URL"
+  },
+  "contentPattern": {
+    "structure": "cell 1 = image (picture, image link or plain-text image URL; Dynamic Media crop/flip/colorize parameters used as authored); cell 2 = short caption text"
+  },
+  "options": [],
+  "memberVariantIds": [],
+  "usage": "Before/after or transformation showcases (crop variants, color transformations, composite imaging).",
+  "reuseGuidance": "Use for any image + caption grid with 2-4 items per row. If cards need a CTA or longer body, use cards-promo.",
+  "sourceUrl": "https://aem-dynamicmedia-demo--dm--hlxsites.aem.page/travel-hospitality/wknd-trvl-home"
+}
